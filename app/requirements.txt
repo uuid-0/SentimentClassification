@@ -1,0 +1,8 @@
+transformers
+torch[cpu]
+accelerate
+fastapi
+pydantic
+uvicorn
+celery
+redis
