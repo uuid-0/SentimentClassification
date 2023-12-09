@@ -47,5 +47,13 @@ services:
     depends_on:
       - redis
 
-      
+  streamlit:
+    container_name: streamlit
+    build: ./streamlit
+    environment:
+      - APP_URL=0.0.0.0:8000
+    ports:
+      - "8501:8501"
+    depends_on:
+      - app
       

@@ -64,7 +64,6 @@ Parameter: text - The text for which you want to analyze sentiment.
 Example:
 
 ```bash
-Copy code
 curl -X 'POST' \
   'http://localhost:8000/analyze-sentiment/' \
   -H 'accept: application/json' \
@@ -77,13 +76,9 @@ This will return a JSON response with a task_id, which you can use to check the 
 
 To check the status of the sentiment analysis task, send a GET request to the /task/{task_id} endpoint, replacing {task_id} with the ID returned from the /analyze-sentiment/ endpoint.
 
-Endpoint: GET /task/{task_id}
-Parameter: task_id - The ID of the task for which you want to check the status.
-
 Example:
 
 ```bash
-Copy code
 curl -X 'GET' \
   'http://localhost:8000/task/<task_id>' \
   -H 'accept: application/json'
@@ -93,4 +88,8 @@ The response will be a JSON object containing the status of the task. If the tas
 ## License
 
 MIT
+
+## Contact me
+
+[LinkedIn](www.linkedin.com/in/akhatova)
 
